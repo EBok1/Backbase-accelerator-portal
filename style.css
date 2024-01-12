@@ -34,7 +34,7 @@ header {
 }
 
 .nav-links {
-    display: block;
+    display: none;
 
     & li {
         list-style: none;
@@ -45,7 +45,7 @@ header {
 }
 
 .visibility {
-    /* display: none; */
+    display: block;
     background-color: pink;
 }
 
