@@ -14,7 +14,7 @@ body{
     font-size: 1.5em;
     float: right;
     padding: 1em;
-    scale: 2;
+    /* scale: 2; */
 }
 
 #menu:hover {
@@ -45,7 +45,8 @@ header {
 }
 
 .visibility {
-    display: none;
+    /* display: none; */
+    background-color: pink;
 }
 
 .cards{
