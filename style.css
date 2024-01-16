@@ -8,6 +8,8 @@
 body{
     background-color: white;
     display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 #menu {
@@ -37,6 +39,7 @@ header {
     display: none;
     transition: 1s;
     text-align: center;
+    z-index: 1;
     & li {
         list-style: none;
     }
@@ -52,7 +55,6 @@ header {
 
 .cards{
         max-width: 360px;
-        height: 394px;
         display: flex;
         flex-wrap: wrap;
     & li {
@@ -74,4 +76,8 @@ header {
     color: #295EFF;
     background-color: #DFE6FF;
     border-radius: 20px;
+}
+
+.cards li {
+    width: 50%;
 }
