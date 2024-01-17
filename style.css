@@ -143,7 +143,6 @@ i{
     max-width: 100%;
     padding: 1em;
     background-color: #fff;
-    transform: translateY(100%);
     transition: transform 0.3s ease;
   }
   
@@ -153,10 +152,6 @@ i{
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-property: z-index, opacity;
-  }
-  
-  .modal.show .modal-content {
-    transform: translateY(0);
   }
 
 #close-modal{
