@@ -1,7 +1,16 @@
-let menuButton = document.querySelector('#menu')
-let nav = document.querySelector('.nav-links')
+// // menu button 
+const menuButton = document.querySelector('#menu');
+const modal = document.querySelector('.modal');
 
 menuButton.addEventListener('click', toggleMenu)
-function toggleMenu() { 
-  nav.classList.toggle('visibility')
+function toggleMenu () {
+  modal.classList.toggle('show')
+}
+
+// close button in navigation
+const closeModalButton = document.querySelector('#close-modal');
+
+closeModalButton.addEventListener('click', closeMenu)
+function closeMenu () {
+  modal.classList.remove('show')
 }

@@ -21,17 +21,22 @@
 
 </head>
 <body>
+    <div class="blur"></div>
     <header>
         <nav>
             <img src="/22BE7773-1438-4EB0-A2E5-92CFD07C269A_4_5005_c.jpeg" alt="">
-           <button><i class='bx bx-menu' id="menu">menu</i></button> 
-            <ul class="nav-links">
-                <li class="product-line"><a href="#">product</a></li>
-                <li class="product-line"><a href="#">developers</a></li>
-                <li class="product-line"><a href="#">documentation</a></li>
-                <li class="product-line"><a href="#">delivery</a></li>
-                <li class="product-line"><a href="#">learning</a></li>
-            </ul>
+           <button id="menu"><i class='bx bx-menu'>menu</i></button> 
+           <div class="modal">
+            <div class="modal-content">
+              <!-- Add the content you want to display in the modal box here -->
+              <button id="close-modal">Close<i class='bx bx-x-circle' ></i></button>
+              <a class="nav-links" href="#">Product<i class='bx bx-right-arrow-circle'></i></a>
+              <a class="nav-links" href="#">Developers<i class='bx bx-right-arrow-circle'></i></a>
+              <a class="nav-links" href="#">Documentation<i class='bx bx-right-arrow-circle'></i></a>
+              <a class="nav-links" href="#">Delivery<i class='bx bx-right-arrow-circle'></i></a>
+              <a class="nav-links" href="#">Learning<i class='bx bx-right-arrow-circle'></i></a>
+            </div>
+          </div>
         </nav>
     </header>
        
@@ -39,7 +44,7 @@
         <h1>Accelerator Portal</h1>
 
         <ul class="cards">
-            <li style="width: 50%;">
+            <li>
                 <i class='bx bx-mobile-alt'></i> 
                         <p class="product-line">Digital Banking</p> 
                         <p class="business-line">Business</p>
@@ -55,7 +60,7 @@
                 <i class='bx bx-bookmark' ></i>
             </li>
 
-            <li style="width: 50%;">
+            <li>
                 <i class='bx bx-desktop' ></i> 
                         <p class="product-line">Digital Banking</p> 
                         <p class="business-line">Assist</p>
@@ -71,7 +76,7 @@
                 <i class='bx bx-bookmark' ></i>
             </li>
 
-            <li style="width: 50%;">
+            <li>
                 <i class='bx bx-mobile-alt'></i> 
                         <p class="product-line1">Digital Onboarding</p> 
                     <br>   <h2>Mastercard-openbanking</h2> 
@@ -83,6 +88,100 @@
                 <i class='bx bx-radio-circle-marked'></i> 0 
                     <br><br><p class="text-link">Download (ZIP, 371 Kb)</p> 
                 <i class='bx bx-download' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-devices'></i>
+                        <p class="product-line">Digital Banking</p> 
+                        <p class="business-line">Retail</p>
+                    <br>   <h2>Backbase-openapi-tools</h2> 
+                        <p class="text-box">Backbase Open Api Tools (boat) helps manage large OpenAPI projects.</p>
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.21</p>
+                <i class='bx bx-git-repo-forked'></i> 20
+                <i class='bx bx-star' ></i> 35
+                <i class='bx bx-radio-circle-marked'></i> 17 
+                    <br><br><p class="text-link">View docs</p> 
+                <i class='bx bx-right-arrow-alt' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-desktop' ></i> 
+                        <p class="product-line3">Digital Lending</p> 
+                    <br>   <h2>Golden-sample-app-ios</h2> 
+                        <p class="text-box">OpenSource at Backbase.</p>
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.20</p>
+                <i class='bx bx-git-repo-forked'></i> 1
+                <i class='bx bx-star' ></i> 1
+                <i class='bx bx-radio-circle-marked'></i> 0 
+                    <br><br><p class="text-link">Download (ZIP, 371 Kb)</p> 
+                <i class='bx bx-download' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i> 
+                        <p class="product-line4">Digital Assist</p> 
+                        <p class="business-line">Customer Support</p>
+                    <br>   <h2>Event-emitter</h2> 
+                        <p class="text-box">Event emitter allows you to produce testing events using REST to the underlying message broker.</p>
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.14</p>
+                <i class='bx bx-git-repo-forked'></i> 0
+                <i class='bx bx-star' ></i> 3
+                <i class='bx bx-radio-circle-marked'></i> 0 
+                    <br><br><p class="text-link">View docs</p> 
+                <i class='bx bx-right-arrow-alt' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i> 
+                        <p class="product-line">Digital Banking</p> 
+                        <p class="business-line">Wealth</p>
+                    <br>   <h2>Golden-sample-app</h2> 
+                        <p class="text-box">This example project is a reference implementation to showcase a number of best practices to use when building a new Angular SPA that leverages Backbase components and libraries.</p>
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.14</p>
+                <i class='bx bx-git-repo-forked'></i> 12
+                <i class='bx bx-star' ></i> 18
+                <i class='bx bx-radio-circle-marked'></i> 0 
+                    <br><br><p class="text-link">View docs</p> 
+                <i class='bx bx-right-arrow-alt' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-devices'></i>
+                        <p class="product-line5">Digital Engage</p> 
+                        <p class="business-line">Audiences</p>
+                    <br>   <h2>Collector-builder-action</h2> 
+                        <p class="text-box">A GitHub action to produce a custom OpenTelemetry Collector.</p>
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.13</p>
+                <i class='bx bx-git-repo-forked'></i> 2
+                <i class='bx bx-star' ></i> 0
+                <i class='bx bx-radio-circle-marked'></i> 0 
+                    <br><br><p class="text-link">View docs</p> 
+                <i class='bx bx-right-arrow-alt' ></i>
+                <i class='bx bx-bookmark' ></i>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i> 
+                        <p class="product-line5">Digital Engage</p> 
+                        <p class="business-line">General Notifications</p>
+                    <br>   <h2>Backbase.github.io</h2> 
+                    <br><p class="latest-activity">latest activity</p> 
+                        <p class="date">2023.12.13</p>
+                <i class='bx bx-git-repo-forked'></i> 2
+                <i class='bx bx-star' ></i> 1
+                <i class='bx bx-radio-circle-marked'></i> 0 
+                    <br><br><p class="text-link">View docs</p> 
+                <i class='bx bx-right-arrow-alt' ></i>
                 <i class='bx bx-bookmark' ></i>
             </li>
         </ul>
