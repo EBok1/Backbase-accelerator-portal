@@ -56,7 +56,7 @@ i{
         max-width: 360px;
         max-height: 394px;
         display: flex;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
     & li {
         margin: 1em;
         padding: 1em;
