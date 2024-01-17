@@ -14,3 +14,9 @@ closeModalButton.addEventListener('click', closeMenu)
 function closeMenu () {
   modal.classList.remove('show')
 }
+
+const textButton = document.querySelector('#text-height'); 
+textButton.addEventListener('click', toggleText)
+function toggleText () {
+  textButton.classList.toggle('present')
+}

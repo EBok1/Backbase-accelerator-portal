@@ -100,6 +100,24 @@ i{
     max-width: fit-content;
 }
 
+.text-link{
+    color: #295EFF;
+}
+
+.bookmark{
+    color: #295EFF;
+}
+
+.arrow{
+    color: #295EFF;
+}
+
+.max-lines {
+    display: block;/* or inline-block */  text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+  }
 
 /* modal menu */
 .modal {
@@ -109,9 +127,12 @@ i{
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background-color: rgba(50, 50, 50, 0.8); */
-    transition: z-index 0.3s ease;
     opacity: 0;
+    /* background-color: rgba(50, 50, 50, 0.8); */
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-property: z-index, opacity;
+    
   }
   
   .modal-content {
@@ -129,6 +150,9 @@ i{
   .modal.show {
     z-index: 100;
     opacity: 1;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-property: z-index, opacity;
   }
   
   .modal.show .modal-content {
@@ -159,3 +183,18 @@ i{
     }
 }
 
+#text-height.present{
+    text-overflow: unset;
+    border: none;
+    background: none;
+}
+
+#text-height{
+    border: none;
+    background: none;
+}
+
+#text-height.present p{
+    text-overflow: unset;
+    max-height: 100%;
+}
