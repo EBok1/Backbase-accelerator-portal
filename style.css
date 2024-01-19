@@ -8,7 +8,14 @@ body{
     background-color: white;
 }
 
+button{
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+}
+
 #menu {
+    margin-right: 2em;
     font-size: 1.5em;
     float: right;
     padding: 1em;
@@ -51,12 +58,12 @@ i{
 }
 
 .cards{
-        
         display: flex;
         flex-wrap: wrap;
     & li {
-        max-width: 320px;
-        max-height: 394px;
+        min-width: 360px;
+        max-width: 360px;
+        max-height: fit-content;
         margin: 1em;
         padding: 1em;
         list-style: none;
