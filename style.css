@@ -15,7 +15,7 @@ button {
 }
 
 #menu {
-    margin-right: 2em;
+    margin-right: 1em;
     font-size: 1.5em;
     float: right;
     padding: 1em;
@@ -35,7 +35,7 @@ img {
 
 header {
     width: 100%;
-    height: 5em;
+    height: 10em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
 }
@@ -75,6 +75,8 @@ i {
 }
 
 .product-line {
+    margin: .2em;
+    padding: .2em;
     color: #B15A00;
     background-color: #FFEBD9;
     border-radius: 20px;
@@ -82,6 +84,8 @@ i {
 }
 
 .product-line1 {
+    margin: .2em;
+    padding: .2em;
     color: #295EFF;
     background-color: #DFE6FF;
     border-radius: 20px;
@@ -89,6 +93,8 @@ i {
 }
 
 .product-line3 {
+    margin: .2em;
+    padding: .2em;
     color: #24684A;
     background-color: #D7F1F1;
     border-radius: 20px;
@@ -96,6 +102,8 @@ i {
 }
 
 .product-line4 {
+    margin: .2em;
+    padding: .2em;
     color: #126F6F;
     background-color: #D5EAE1;
     border-radius: 20px;
@@ -103,6 +111,8 @@ i {
 }
 
 .product-line5 {
+    margin: .2em;
+    padding: .2em;
     color: #6116C0;
     background-color: #E8DDF8;
     border-radius: 20px;
@@ -110,24 +120,22 @@ i {
 }
 
 .text-link {
+    padding-top: 1em;
     color: #295EFF;
+    z-index: 1;
+    position: relative;
 }
 
 .bookmark {
     color: #295EFF;
+    z-index: 1;
+    position: relative;
 }
 
 .arrow {
     color: #295EFF;
-}
-
-.max-lines {
-    display: block;
-    /* or inline-block */
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-height: 3.6em;
+    z-index: 1;
+    position: relative;
 }
 
 /* modal menu */
@@ -158,7 +166,7 @@ i {
 }
 
 .modal.show {
-    z-index: 100;
+    z-index: 20;
     opacity: 1;
     transition-duration: 0.5s;
     transition-timing-function: ease;
@@ -186,11 +194,18 @@ i {
     text-overflow: unset;
     border: none;
     background: none;
+
 }
 
 #text-height {
     border: none;
     background: none;
+    display: block;
+    /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
 }
 
 #text-height.present p {
