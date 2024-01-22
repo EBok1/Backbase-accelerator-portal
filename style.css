@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Libre Franklin', sans-serif;
 }
 
-body{
+body {
     background-color: white;
 }
 
-button{
+button {
     text-align: left;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
@@ -28,7 +28,7 @@ button{
     cursor: pointer;
 }
 
-img{
+img {
     width: 10em;
     padding: .5em;
 }
@@ -50,19 +50,21 @@ header {
     color: black;
 }
 
-i{
+i {
     padding-left: .5em;
     padding-top: .1em;
     color: black;
     scale: 1.2;
+    z-index: -1;
 }
 
-.cards{
-        display: flex;
-        flex-wrap: wrap;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+
     & li {
-        min-width: 360px;
-        max-width: 360px;
+        min-width: 320px;
+        max-width: 320px;
         max-height: fit-content;
         margin: 1em;
         padding: 1em;
@@ -72,59 +74,61 @@ i{
     }
 }
 
-.product-line{
+.product-line {
     color: #B15A00;
     background-color: #FFEBD9;
     border-radius: 20px;
     max-width: fit-content;
 }
 
-.product-line1{
+.product-line1 {
     color: #295EFF;
     background-color: #DFE6FF;
     border-radius: 20px;
     max-width: fit-content;
 }
 
-.product-line3{
+.product-line3 {
     color: #24684A;
     background-color: #D7F1F1;
     border-radius: 20px;
     max-width: fit-content;
 }
 
-.product-line4{
+.product-line4 {
     color: #126F6F;
     background-color: #D5EAE1;
     border-radius: 20px;
     max-width: fit-content;
 }
 
-.product-line5{
+.product-line5 {
     color: #6116C0;
     background-color: #E8DDF8;
     border-radius: 20px;
     max-width: fit-content;
 }
 
-.text-link{
+.text-link {
     color: #295EFF;
 }
 
-.bookmark{
+.bookmark {
     color: #295EFF;
 }
 
-.arrow{
+.arrow {
     color: #295EFF;
 }
 
 .max-lines {
-    display: block;/* or inline-block */  text-overflow: ellipsis;
+    display: block;
+    /* or inline-block */
+    text-overflow: ellipsis;
     word-wrap: break-word;
     overflow: hidden;
     max-height: 3.6em;
-  }
+}
 
 /* modal menu */
 .modal {
@@ -139,10 +143,10 @@ i{
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-property: z-index, opacity;
-    
-  }
-  
-  .modal-content {
+
+}
+
+.modal-content {
     position: absolute;
     top: 5em;
     left: 0;
@@ -151,17 +155,17 @@ i{
     padding: 1em;
     background-color: #fff;
     transition: transform 0.3s ease;
-  }
-  
-  .modal.show {
+}
+
+.modal.show {
     z-index: 100;
     opacity: 1;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-property: z-index, opacity;
-  }
+}
 
-#close-modal{
+#close-modal {
     color: black;
     float: right;
     font-size: 16px;
@@ -171,32 +175,31 @@ i{
     padding-right: 1.5em;
 }
 
-
-  /* .portal{
-    filter: blur(.3em);
-} */
-
-
-
-@media (min-width: 360px) {
-    .cards{
-        display: flex; 
-        flex-direction: row; 
+@media (min-width: 380px) {
+    .cards {
+        display: flex;
+        flex-direction: row;
     }
 }
 
-#text-height.present{
+#text-height.present {
     text-overflow: unset;
     border: none;
     background: none;
 }
 
-#text-height{
+#text-height {
     border: none;
     background: none;
 }
 
-#text-height.present p{
+#text-height.present p {
     text-overflow: unset;
     max-height: 100%;
+}
+
+
+.sticky-navbar {
+    position: -webkit-sticky;
+    position: sticky;
 }
