@@ -24,11 +24,13 @@
 </head>
 
 <body>
-    <div class="sticky-navbar">
-        <header>
+    <div>
+        <header class="sticky-navbar">
             <nav>
-                <img src="./logo.png" alt="Backbase logo">
-                <button id="menu">Menu<i class='bx bx-menu'></i></button>
+                <div class="header" id="myHeader">
+                    <img src="./logo.png" alt="Backbase logo">
+                    <button id="menu">Menu<i class='bx bx-menu'></i></button>
+                </div>
                 <h1>Accelerator Portal</h1>
                 <div class="modal">
                     <div class="modal-content">
@@ -46,13 +48,6 @@
         </header>
     </div>
 
-    <section>
-        <button id="filter-devices">All</button>
-        <button id="filter-devices">Web & Mobile <i class='bx bx-devices arrow'></i> </button>
-        <button id="filter-devices">Web <i class='bx bx-desktop arrow'></i> </button>
-        <button id="filter-devices">Mobile <i class='bx bx-mobile-alt arrow'></i> </button>
-    </section>
-
     <label for="filter-product">SORT BY</label>
     <div>
         <select name="products" id="products">
@@ -66,6 +61,13 @@
             <option value="Last updated">Last Updated</option>
         </select>
     </div>
+
+    <section class="device-filter">
+        <button id="filter-devices">All</button>
+        <button id="filter-devices">Web & Mobile <i class='bx bx-devices arrow'></i> </button>
+        <button id="filter-devices">Web <i class='bx bx-desktop arrow'></i> </button>
+        <button id="filter-devices">Mobile <i class='bx bx-mobile-alt arrow'></i> </button>
+    </section>
 
     <section class="portal">
 

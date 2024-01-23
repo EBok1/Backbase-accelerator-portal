@@ -35,10 +35,20 @@ img {
 
 header {
     width: 100%;
-    height: 8em;
+    height: 8.5em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
+    margin-bottom: .5em;
 }
+
+.header {
+    width: 100%;
+    height: 5em;
+    background: #F3F6F9;
+    border-bottom-right-radius: 33.3px;
+    z-index: 10;
+}
+
 
 .nav-links {
     text-decoration: none;
@@ -58,6 +68,10 @@ i {
 }
 
 h1 {
+    padding: 0 0 .2em .5em;
+}
+
+.device-filter {
     padding: .5em;
 }
 
@@ -72,7 +86,7 @@ h1 {
     max-width: 171px;
     max-height: 40px;
     display: inline;
-    margin: 1em 0 1em 0;
+    margin-top: .3em;
 }
 
 label {
@@ -192,7 +206,7 @@ label {
 
 .modal-content {
     position: absolute;
-    top: 5em;
+    top: 4em;
     left: 0;
     width: 100%;
     max-width: 100%;
@@ -219,13 +233,6 @@ label {
     padding-right: 1.5em;
 }
 
-@media (min-width: 380px) {
-    .cards {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 #text-height.present {
     text-overflow: unset;
     border: none;
@@ -250,13 +257,35 @@ label {
 }
 
 
-/* .sticky-navbar {
-    position: -webkit-sticky;
-    position: sticky;
-} */
-
 header.modal-open .text-link,
 header.modal-open .bookmark,
 header.modal-open .arrow {
     display: none;
+}
+
+
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+    padding-top: 102px;
+}
+
+
+/* On screens that are 600px or more, set the background color to olive */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: olive;
+    }
 }
