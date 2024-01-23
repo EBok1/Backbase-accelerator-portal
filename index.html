@@ -34,15 +34,37 @@
                     <div class="modal-content">
                         <!-- Add the content you want to display in the modal box here -->
                         <button id="close-modal">Close<i class='bx bx-x-circle'></i></button>
-                        <a class="nav-links" href="#">Product<i class='bx bx-right-arrow-circle'></i></a>
-                        <a class="nav-links" href="#">Developers<i class='bx bx-right-arrow-circle'></i></a>
-                        <a class="nav-links" href="#">Documentation<i class='bx bx-right-arrow-circle'></i></a>
-                        <a class="nav-links" href="#">Delivery<i class='bx bx-right-arrow-circle'></i></a>
-                        <a class="nav-links" href="#">Learning<i class='bx bx-right-arrow-circle'></i></a>
+                        <a class="nav-links" href="#">Product<i class='bx bx-right-arrow-circle circleArrow'></i></a>
+                        <a class="nav-links" href="#">Developers<i class='bx bx-right-arrow-circle circleArrow'></i></a>
+                        <a class="nav-links" href="#">Documentation<i
+                                class='bx bx-right-arrow-circle circleArrow'></i></a>
+                        <a class="nav-links" href="#">Delivery<i class='bx bx-right-arrow-circle circleArrow'></i></a>
+                        <a class="nav-links" href="#">Learning<i class='bx bx-right-arrow-circle circleArrow'></i></a>
                     </div>
                 </div>
             </nav>
         </header>
+    </div>
+
+    <section>
+        <button id="filter-devices">All</button>
+        <button id="filter-devices">Web & Mobile <i class='bx bx-devices arrow'></i> </button>
+        <button id="filter-devices">Web <i class='bx bx-desktop arrow'></i> </button>
+        <button id="filter-devices">Mobile <i class='bx bx-mobile-alt arrow'></i> </button>
+    </section>
+
+    <label for="filter-product">SORT BY</label>
+    <div>
+        <select name="products" id="products">
+            <option value="Banking">Digital Banking</option>
+            <option value="Onboarding">Digital Onboarding</option>
+            <option value="Lending">Digital Lending</option>
+            <option value="Assist">Digital Assist</option>
+            <option value="Engage">Digital Engage</option>
+        </select>
+        <select name="products" id="products">
+            <option value="Last updated">Last Updated</option>
+        </select>
     </div>
 
     <section class="portal">
