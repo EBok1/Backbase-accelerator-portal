@@ -34,7 +34,7 @@ img {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 8.5em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
@@ -42,7 +42,7 @@ header {
 }
 
 .header {
-    width: 100vw;
+    width: 100%;
     height: 5em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
@@ -50,6 +50,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-icons {
+    display: none;
+}
+
+.laguage {
+    display: none;
+}
+
+.arrow-down {
+    display: none;
 }
 
 .menu {
@@ -120,6 +132,7 @@ label {
     flex-wrap: wrap;
 
     & li {
+        min-width: 320px;
         max-width: 320px;
         max-height: fit-content;
         margin: 1em;
@@ -271,11 +284,8 @@ header.modal-open .arrow {
 
 
 
-/* Page content */
-.content {
-    padding: 16px;
-}
 
+/* sticky menu  */
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
@@ -289,11 +299,21 @@ header.modal-open .arrow {
 }
 
 
-/* On screens that are 600px or more, set the background color to olive */
+/* media query when screen is bigger */
+/* On screens that are 600px or more, menu visible in header */
 @media screen and (min-width: 600px) {
     .menu {
         display: inline;
         justify-content: center;
+        color: #091C35;
+        list-style: none;
+        text-decoration: none;
+        padding: 12px;
+    }
+
+    /* text color is blue when hover */
+    .menu:hover {
+        color: #295EFF;
     }
 
     .modal {
@@ -307,4 +327,54 @@ header.modal-open .arrow {
     .header {
         justify-content: left;
     }
+
+    .header-icons {
+        display: block;
+        margin: .2em;
+    }
+
+    .laguage {
+        display: block;
+        background-color: #CCD5DF;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 33.3px 33.3px 33.3px 2px;
+        color: #091C35;
+    }
+
+    .arrow-down {
+        display: block;
+        margin-right: .5em;
+        padding-right: 1em;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+/* footer content */
+/* icon styling */
+.dot {
+    font-size: .5em;
+}
+
+/* logo styling */
+.backbase-footer {
+    width: 93.6px;
+}
+
+/* text and background styling */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #F3F6F9;
+    width: 100%;
+    height: 88px;
 }
