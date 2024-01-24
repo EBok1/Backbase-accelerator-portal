@@ -8,6 +8,7 @@ function toggleMenu() {
   document.querySelector('header').classList.toggle('modal-open');
 }
 
+
 // close button in navigation
 const closeModalButton = document.querySelector('#close-modal');
 
@@ -16,6 +17,8 @@ function closeMenu() {
   modal.classList.remove('show')
 }
 
+
+// button larger text
 const textButton = document.querySelector('#text-height');
 textButton.addEventListener('click', toggleText)
 function toggleText() {
@@ -23,8 +26,7 @@ function toggleText() {
 }
 
 
-
-
+// sticky header
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () { myFunction() };
 
