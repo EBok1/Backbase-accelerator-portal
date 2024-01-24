@@ -3,8 +3,9 @@ Create an easy-to-use overview of all our accelerators (repositories from GitHub
 
 ## Table of content 
 - [Description](https://github.com/EBok1/Backbase-accelerator-portal?tab=readme-ov-file#description)
-- [Features]()
-- [license]()
+- [Checklist](https://github.com/EBok1/Backbase-accelerator-portal?tab=readme-ov-file#checklist)
+- [Features](https://github.com/EBok1/Backbase-accelerator-portal?tab=readme-ov-file#features)
+- [license](https://github.com/EBok1/Backbase-accelerator-portal?tab=readme-ov-file#license)
 
 ## Description 
 Backbase wants to show an updated overview of all available accelerators on their official website.
