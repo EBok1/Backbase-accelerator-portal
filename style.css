@@ -34,7 +34,7 @@ img {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 8.5em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
@@ -42,13 +42,20 @@ header {
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     height: 5em;
     background: #F3F6F9;
     border-bottom-right-radius: 33.3px;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.menu {
+    display: none;
+    padding: 1em;
+}
 
 .nav-links {
     text-decoration: none;
@@ -113,7 +120,6 @@ label {
     flex-wrap: wrap;
 
     & li {
-        min-width: 320px;
         max-width: 320px;
         max-height: fit-content;
         margin: 1em;
@@ -210,7 +216,7 @@ label {
     left: 0;
     width: 100%;
     max-width: 100%;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     background-color: #fff;
     transition: transform 0.3s ease;
 }
@@ -230,7 +236,7 @@ label {
     border: none;
     text-decoration: none;
     background: none;
-    padding-right: 1.5em;
+    padding-right: 2em;
 }
 
 #text-height.present {
@@ -285,7 +291,20 @@ header.modal-open .arrow {
 
 /* On screens that are 600px or more, set the background color to olive */
 @media screen and (min-width: 600px) {
-    body {
-        background-color: olive;
+    .menu {
+        display: inline;
+        justify-content: center;
+    }
+
+    .modal {
+        display: none;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .header {
+        justify-content: left;
     }
 }
