@@ -2,7 +2,7 @@
 Create an easy-to-use overview of all our accelerators (repositories from GitHub).
 
 ## Table of content 
-- [Description]([license](https://github.com/EBok1/the-startup-responsive-interactieve-website/edit/main/README.md#description))
+- [Description](https://github.com/EBok1/Backbase-accelerator-portal?tab=readme-ov-file#description)
 - [Features]()
 - [license]()
 
@@ -12,9 +12,18 @@ The reason for this initiative is to address the current situation on GitHub, wh
 
 By offering an up-to-date overview, backbase ensures clarity and accessibility, so that users can easily find relevant accelerators.
 
-The target group of the Accelerator Portal consists of companies and individuals interested in obtaining more information or examples of the apps and services that Backbase offers.
+The target group of the Accelerator Portal consists of companies and individuals interested in obtaining more information or examples of the apps and services that Backbase offers. <br> <br>
 
-Link to website:
+**Mobile Version:** <br>
+<img width="300" alt="mobile" src="https://github.com/EBok1/Backbase-accelerator-portal/assets/144004887/99861916-4168-485b-b8e5-adc50daa6d9a"> <br> <br>
+**Desktop Version:** <br>
+<img width="1000" alt="desktop" src="https://github.com/EBok1/Backbase-accelerator-portal/assets/144004887/a8d4f202-a6ef-42d4-8449-fd26607011a2"> <br> <br> 
+**Select Menu:** <br>
+<img width="300" alt="select-menu" src="https://github.com/EBok1/Backbase-accelerator-portal/assets/144004887/53e7bc7d-ab0a-4b8c-8aa8-bb7326a8e4d8"> <br> <br> 
+**Dropdown menu:** <br> 
+<img width="300" alt="dropdown-menu" src="https://github.com/EBok1/Backbase-accelerator-portal/assets/144004887/4b0db41d-8052-43f6-b2fc-55e8bad852a4"> <br> <br> 
+
+Link to my website if you want to take a look:
 [Backbase Accelerator portal](https://ebok1.github.io/Backbase-accelerator-portal/)
 
 The website is designed with a mobile-first approach, focusing on the mobile user experience. Various micro-interactions are integrated to improve interaction with the website. For example, a hamburger menu has been added to the header, allowing the user to access different sections of the site.
@@ -22,20 +31,49 @@ The website is designed with a mobile-first approach, focusing on the mobile use
 Another addition is the selection item, which should allow users to filter. However, this function does not yet work.
 
 The integration of these interactive elements contributes to an improved user experience.
-
-
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
-
-how to use the website 
-
-checklist 
+ 
+## Checklist 
+**Success:**
+- [x] Micro-interaction -> dropdown/modal menu
+- [x] Select form
+- [x] Mobile & desktop version
+- [x] All content is there
+  
+**Did not succeed:**
+- [ ] Blur background when dropdown menu is visible
+- [ ] Layout of the cards are not formatted like the design
+- [ ] Sort by filter not working
+- [ ] Ipad version
 
 ## Features 
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+When creating this assignment I tried to take the semantics of the code into account.
+**HTML:**
+- Body 
+- Header
+- Modal/menu (div, button, a, p, i)
 
-sources
+- Label -> select, options 
+- Buttons
+
+- Section
+- Ul -> li (i, p, h2, a)
+
+- Footer (img, p)
+
+**CSS:**
+- Buttons
+- Menu
+- Header
+- Cards
+- Modal
+- Sticky menu
+- @media
+- Footer 
+
+**JS:**
+- AddEventListener
+- QuerySelector
+- Function
 
 ## license
 This project is licensed under the terms of the [MIT license](./LICENSE).
